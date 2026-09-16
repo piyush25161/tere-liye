@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You ♡</title>
+  <meta name="description" content="A little something made just for you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Tiny floating hearts background -->
+  <div class="floating-hearts" aria-hidden="true" id="floatingHearts"></div>
+
+  <!-- Cursor sparkle canvas -->
+  <canvas id="sparkleCanvas"></canvas>
+
+  <!-- Audio -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="tere liye.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music toggle -->
+  <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
+    <span class="music-icon">♪</span>
+    <span class="music-bars">
+      <span></span><span></span><span></span>
+    </span>
+  </button>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 1: THE ENTRANCE                -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="entrance" id="entrance">
+    <div class="entrance-overlay"></div>
+    <div class="entrance-photo">
+      <img src="photo1.jpeg" alt="You" id="entranceImg">
+    </div>
+    <div class="entrance-content">
+      <div class="entrance-sparkle">✦</div>
+      <p class="entrance-subtitle">hey bbg,</p>
+      <h1 class="entrance-title">I have something for ya<br>scroll down plssss<span class="heart-inline">♡</span></h1>
+      <p class="entrance-whisper">i hope you'll like this</p>
+      <button class="scroll-btn" id="scrollBtn">
+        <span>come in</span>
+        <svg class="arrow-down" viewBox="0 0 24 24" width="20" height="20">
+          <path d="M12 4v16m0 0l-6-6m6 6l6-6" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="entrance-petals" id="entrancePetals"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 2: THE PHOTO GALLERY           -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+
+    <div class="gallery-intro">
+      <div class="doodle-divider">~ ♡ ~</div>
+      <p class="gallery-intro-text">some of my favourite moments with you...</p>
+    </div>
+
+    <div class="photo-card" data-index="1">
+      <div class="photo-frame">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <img src="photo2.jpeg" alt="Memory" loading="lazy">
+      </div>
+      <div class="photo-caption">
+        <p>you are mine and i'm yours forever.</p>
+        <p class="caption-small">you smiled, and my world got a little brighter ✿</p>
+      </div>
+    </div>
+
+    <div class="photo-card" data-index="2">
+      <div class="photo-frame">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <img src="photo3.jpeg" alt="Memory" loading="lazy">
+      </div>
+      <div class="photo-caption">
+        <p>the chatpate-est couple hehe</p>
+        <p class="caption-small">i loveeeee youuuuuuuuuuuuuuuuuuuuuwwwwwwww</p>
+      </div>
+    </div>
+
+    <div class="photo-card" data-index="3">
+      <div class="photo-frame">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <img src="photo4.jpeg" alt="Memory" loading="lazy">
+      </div>
+      <div class="photo-caption">
+        <p>We look so cute together na</p>
+        <p class="caption-small">(shadi krle toh btao?)</p>
+      </div>
+    </div>
+
+    <div class="photo-card" data-index="4">
+      <div class="photo-frame">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <img src="photo5.jpeg" alt="Memory" loading="lazy">
+      </div>
+      <div class="photo-caption">
+        <p>YOU are the cutest, pretiest, sexiest girl i have ever seen</p>
+        <p class="caption-small">i wanna hug you rn. i wanna kiss you rn, i wanna cuddle with you </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 3: THE LETTER                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="letter-section" id="letter">
+    <div class="letter-wrapper">
+      <div class="letter-decoration-top">❀ ─── ✿ ─── ❀</div>
+      <div class="letter-paper">
+        <div class="letter-date"> 16th of september, 2026</div>
+
+        <div class="letter-line" data-reveal>dear you,</div>
+
+        <div class="letter-line" data-reveal>
+          i don't even know where to start. there are so many things i want to say to you but every time i try, the
+          words just fall short. so i'm writing this instead, hoping that maybe here i can tell
+          you what my heart keeps trying to say.
+        </div>
+
+        <div class="letter-line" data-reveal>
+          its been 1.5 years, feels like yesternight i proposed you and you said "i like you too, (bhaag jaati hu yha se
+          ab)" i couldnt believe, crush ne proposal accept krliya, i amount of obsession i had for you then, i have it
+          even more now. i want you in my life, nothing much, i wanna keep you happy, keep you mine, and just make you
+          feel loved forever.
+        </div>
+
+        <div class="letter-line" data-reveal>
+          kasam se, i get jealous of even your roommate who get to see you daily in person, i wish i could touch you,
+          feel you, but nvm this doesnt change the love i feel for you. ldr, cant change it, just know that you are
+          loved and you will be always
+        </div>
+
+        <div class="letter-line" data-reveal>
+          i feel so gratefull to have you in my life, my life's best moments are the one i have spent with you only...
+        </div>
+
+        <div class="letter-line" data-reveal>
+
+        </div>
+
+        <div class="letter-line" data-reveal>
+          i love you so much my cutie pie, you mean the world to me.
+        </div>
+
+        <div class="letter-line letter-sign" data-reveal>
+          with all my love,<br>
+          <span class="letter-signature">yours, always ♡</span>
+        </div>
+      </div>
+      <div class="letter-decoration-bottom">❀ ─── ✿ ─── ❀</div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SECTION 4: THE ENDING                  -->
+  <!-- ═══════════════════════════════════════ -->
+  <section class="ending" id="ending">
+    <div class="ending-content">
+      <div class="ending-hearts" id="endingHearts"></div>
+      <p class="ending-text">you reached the end,<br>but </p>
+      <div class="ending-buttons">
+        <button class="ending-btn replay-btn" id="replayBtn">
+          <span>♪</span> play song
+        </button>
+        <button class="ending-btn restart-btn" id="restartBtn">
+          <span>↑</span> go to top
+        </button>
+      </div>
+      <p class="ending-footer">love ya bbg</p>
+      <div class="ending-tiny-hearts">♡ ♡ ♡</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
